@@ -1,0 +1,6 @@
+﻿  squares.cpp
+c:\users\14355\onedrive\code\紫书刘汝佳\习题\4-2 正方形（squares）\squares.cpp(20): warning C4477: “scanf”: 格式字符串“%d”需要类型“int *”的参数，但可变参数 2 拥有了类型“char *”
+  c:\users\14355\onedrive\code\紫书刘汝佳\习题\4-2 正方形（squares）\squares.cpp(20): note: 请考虑在格式字符串中使用“%hhd”
+c:\users\14355\onedrive\code\紫书刘汝佳\习题\4-2 正方形（squares）\squares.cpp(20): warning C4477: “scanf”: 格式字符串“%d”需要类型“int *”的参数，但可变参数 3 拥有了类型“char *”
+  c:\users\14355\onedrive\code\紫书刘汝佳\习题\4-2 正方形（squares）\squares.cpp(20): note: 请考虑在格式字符串中使用“%hhd”
+  4-2 正方形（Squares）.vcxproj -> C:\Users\14355\OneDrive\Code\紫书刘汝佳\习题\4-2 正方形（Squares）\Debug\4-2 正方形（Squares）.exe

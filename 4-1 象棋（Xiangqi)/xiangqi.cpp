@@ -1,14 +1,14 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
-typedef struct{
+typedef struct{//棋子结构体
 	char kind;
 	int r, c;
 }Piece; 
-Piece red[8],General, GeneralX;;//红方棋子数，2-7 /黑方将
 int n;//红方棋子数
+Piece red[8],General, GeneralX;;//红方棋子数，2-7 /黑方将
 char board[10 + 1][9 + 1];//棋盘，0行/列不用
-void readPieces() {
+void readPieces() {//输入
 	for (int i = 0; i < n; ++i) {
 		scanf("%s %d %d", &red[i].kind, &red[i].r, &red[i].c);//读入棋子数据
 		board[red[i].r][red[i].c] = red[i].kind;//在棋盘中标记
@@ -39,7 +39,7 @@ int judge(char r, char c) {
 	if (r == GeneralX.r&&c == GeneralX.c)return 1;
 	else return 0;
 }
-int checkMate() {
+int checkMate() {//判断能否将死
 	char piece, r, c;
 	for (int i = 0; i < n; ++i) {
 		piece = red[i].kind; r = red[i].r; c = red[i].c;
