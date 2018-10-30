@@ -21,14 +21,14 @@ int main() {
 					memcpy(a, temp, 6 * sizeof(char));
 					updateR(i, j, k);
 					Rotate(a);
-					printf("%s\n", a);
+					//printf("%s\n", a);
 					if (strcmp(a, b) == 0) {
 						flag = 1;
-						//i = j = k = 360;
+						i = j = k = 360;
 					}
 				}
-		//if (flag) printf("TRUE\n");
-		//else printf("FALSE\n");
+		if (flag) printf("TRUE\n");
+		else printf("FALSE\n");
 	}
 	fclose(stdin);
 	fclose(stdout);
@@ -79,5 +79,3 @@ int Cos(int a) {//a的取值应为0、90、180、270
 	else if (a == 90 || a == 270) return 0;
 	else return -1;
 }
-
-
